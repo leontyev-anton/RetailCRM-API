@@ -28,11 +28,11 @@ def write_data(orders):
     # # пишет неправильно колонку items
     # try:
     #     df = pandas.DataFrame.from_dict(orders)
-    #     pandas_gbq.to_gbq(df, 'vimport.orders_pandas', project_id='leontyev-anton', if_exists='replace')
+    #     pandas_gbq.to_gbq(df, g_table_name, project_id=g_project, if_exists='replace')
     # except Exception as e:
     #     print(f'Error. Can\'t write table in BigQuery: {e}')
     # else:
-    #     print(f'Table in BigQuery vimport.orders_pandas is successfully created. Number of rows: {len(df)}')
+    #     print(f'Table in BigQuery {g_table_name} is successfully created. Number of rows: {len(df)}')
 
 
 retail_url = 'https://v-import.retailcrm.ru/api/v5/orders'  # filter[numbers][]=1235C&filter[customFields][nps][min]=5
