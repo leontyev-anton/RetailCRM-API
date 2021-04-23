@@ -1,1 +1,1 @@
-Документация API https://help.retailcrm.ru/Developers/Index
+API documentation: https://help.retailcrm.ru/Developers/Index
