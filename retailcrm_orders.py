@@ -1,11 +1,10 @@
-import requests
-from google.cloud import bigquery
-from google.oauth2 import service_account
-import pandas
-import pandas_gbq
 import sys
 import time
+
+import requests
 from config import g_file, g_project, g_table_name, api_auth
+from google.cloud import bigquery
+from google.oauth2 import service_account
 
 
 def write_data(orders):
